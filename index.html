@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tri Surya Jaya</title>
+    
+    <!-- Performance: Preconnect to critical origins -->
+    <link rel="preconnect" href="https://aistudiocdn.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#18181B', // A deep, neutral charcoal (--bg)
+            'secondary': '#27272A', // A slightly lighter grey for cards
+            'accent': {
+              'DEFAULT': '#EAB308', // A rich, elegant gold (--primary-accent)
+              'hover': '#CA8A04'
+            },
+            'content': '#F4F4F5', // A soft off-white for primary text
+            'content-secondary': '#A1A1AA', // A dimmer grey for subtitles, etc.
+            'border-color': '#3F3F46', // A subtle border color
+          },
+          fontFamily: {
+            sans: ['"Inter"', 'system-ui', 'sans-serif'],
+            serif: ['"Lora"', 'ui-serif', 'Georgia', 'serif'],
+          },
+          boxShadow: {
+            // --elevation tokens
+            'premium': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)',
+            'premium-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)',
+          },
+          borderRadius: {
+            // --radius tokens
+            'lg': '0.5rem',
+            'xl': '0.75rem',
+          },
+          fontSize: {
+            // --fs-base token
+            'base': '1rem', // Approx 16px
+          },
+          keyframes: {
+            'page-fade-in': {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            'fade-in-down': {
+              '0%': { opacity: '0', transform: 'translateY(-20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          },
+          animation: {
+            'page-fade-in': 'page-fade-in 0.4s ease-out forwards',
+            'fade-in-down': 'fade-in-down 0.5s ease-out forwards',
+            'fade-in-up': 'fade-in-up 0.5s ease-out 0.2s forwards',
+          }
+        }
+      }
+    }
+    </script>
+    <!-- SEO: JSON-LD Schema for Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Tru Surya Jaya",
+      "url": "https://www.perusahaanxyz.com",
+      "logo": "https://www.perusahaanxyz.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+62-551-123-4567",
+        "contactType": "customer service"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Pangeran Diponegoro No. 123",
+        "addressLocality": "Tarakan",
+        "addressRegion": "Kalimantan Utara",
+        "addressCountry": "ID"
+      },
+      "sameAs": [
+        "https://www.facebook.com/xyz",
+        "https://www.instagram.com/xyz"
+      ]
+    }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.8.2",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-primary text-content font-sans antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
